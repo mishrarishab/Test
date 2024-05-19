@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class operatorooverloading {
+    public void area(int r){
+        System.out.println("Area of circle=>"+3.14*r*r);
+    }
+    public void area(int l,int b){
+        System.out.println("Area of Reactangle=>"+l*b);
+    }
+    public void area(float b,float h){
+        System.out.println("Area of Triangle=>"+0.5*b*h);
+    }
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        operatorooverloading op=new operatorooverloading();
+        op.area(45);
+        op.area(3,4);
+        op.area(32,98);
+    }
+}
