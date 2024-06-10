@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class rightpyra {
+        
+        public static void main(String [] args){
+            Scanner sc=new Scanner(System.in);
+	int n,i,j,k=1;
+	System.out.println("Enter total no of lines");
+        n=sc.nextInt();
+	for(i=1;i<=n;i++)
+	{
+                  for(k=n;k>i;k--){
+                      System.out.print(" ");
+                  }
+                 for(j=1;j<=i;j++){
+                     System.out.print(k);
+                     k++;     
+                 }
+                 System.out.println();
+		}
+	}	
+}
