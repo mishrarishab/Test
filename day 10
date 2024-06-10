@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Prime {
+    public static int Prime(int n){
+        for(int i=2;i<=n-1;i++){
+        if(n%i==0)
+        return 1;
+        else
+            return 0;
+        }
+        return 0;
+    }
+    
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("ENter any no");
+        int n=sc.nextInt();
+        int p=Prime(n);
+        if(p==1){
+            System.out.println("Given no is not prime no");
+        }else{
+            System.out.println("Given no is prime no");
+        }
+        
+                
+    }
+}
