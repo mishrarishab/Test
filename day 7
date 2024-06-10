@@ -1,0 +1,40 @@
+import java.util.Scanner;
+public class Array{
+       public static void main(String [] args){
+           Scanner sc=new Scanner (System.in);
+           int row,col,k;
+           int a[][]=new int[50][50];
+           int b[][]=new int[50][50];
+           int c[][]=new int[50][50];
+           
+           System.out.println("Enter elements in 1st Matrix");
+           for(row=1;row<=3;row++){
+               for(col=1;col<=3;col++){
+                   a[row][col]=sc.nextInt();
+               }
+           }
+           
+           System.out.println("Enter elements in 2nd Matrix");
+           for(row=1;row<=3;row++){
+               for(col=1;col<=3;col++){
+                   a[row][col]=sc.nextInt();
+               }
+           }
+            
+           for(row=1;row<=3;row++){
+               for(col=1;col<=3;col++){
+                   c[row][col]=0;
+                   for(k=1;k<=3;k++){
+                       c[row][col]=c[row][col]+a[row][k]*b[k][col];
+                   }
+               }
+           }
+           System.out.println("Final Matrix");
+           for(row=1;row<=3;row++){
+               for(col=1;col<=3;col++){
+                   System.out.println(""+c[row][col]);
+               }
+               
+           }
+       }
+}
